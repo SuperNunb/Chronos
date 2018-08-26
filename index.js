@@ -1,8 +1,7 @@
 const Discord = require("discord.js")
 const bot = new Discord.Client();
 const prefix = 'ch ';
-const timeship = require('./timeship.json');
-const token = timeship.token;
+const token = process.env.token;
 const recentTimer = new Set();
 bot.setMaxListeners(100);
 bot.login(token);
