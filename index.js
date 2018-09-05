@@ -98,13 +98,13 @@ bot.on("message", message => {
     else if (message.content.startsWith("nunbTime") || message.content.startsWith(prefix + "nunbTime")) {
         let nunbHour = new Date().getHours();
         let nunbHemi = "a.m.";
-        if (nunbHour > 12) {
+        /*if (nunbHour > 12) {
             console.log('> 12');
             nunbHemi = "p.m.";
             nunbHour = nunbHour - 12;
         } else if (nunbHour == 12) nunbHemi = "p.m.";
         console.log("..." + nunbHour + "...");
-        let nunbMin = new Date().getMinutes();
+        */let nunbMin = new Date().getMinutes();
         if (nunbMin < 10) nunbMin = `0${nunbMin}`;
         let nunbTime = `${nunbHour}:${nunbMin} ${nunbHemi}`;
         message.channel.send(`It is ${nunbTime} for SuperNunb right now.`);
