@@ -126,7 +126,7 @@ bot.on("message", message => {
                     value: `To guard time against the idiots known as the Legends. Or to tell the time. I don't remember.`
                 }, {
                     name: "**Commands:**",
-                    value: `    **${prefix} timer {minutes here} {seconds or hours here if you want me to measure those instead}:** sets a timer for the amount of time you specify \n    **nunbTime:** gives the current time where SuperNunb lives, in case you need to know why a bot isn't getting fixed, etc. \n    **${prefix}uptime:** gives Chronos's current uptime \n    **${prefix}moment:** sends a random gif of Chronos's finest moments.`
+                    value: `    **${prefix} timer {minutes here} {seconds or hours here if you want me to measure those instead}:** sets a timer for the amount of time you specify \n    **nunbTime:** gives the current time where SuperNunb lives, in case you need to know why a bot isn't getting fixed, etc. (This command is not working properly right now.)\n    **${prefix}uptime:** gives Chronos's current uptime \n    **${prefix}moment:** sends a random gif of Chronos's finest moments.`
                 }]
             }
         });
