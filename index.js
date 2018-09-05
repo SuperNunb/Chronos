@@ -100,7 +100,7 @@ bot.on("message", message => {
         let nunbHemi = "a.m.";
         if (nunbHour >= 12) {
             nunbHemi = "p.m."
-            nunbHour = nunbHour - 12;
+            nunbHour = nunbHour - 6;
         }
         let nunbMin = new Date().getMinutes();
         if (nunbMin < 10) nunbMin = `0${nunbMin}`;
