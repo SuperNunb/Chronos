@@ -99,9 +99,10 @@ bot.on("message", message => {
         let nunbHour = new Date().getHours();
         let nunbHemi = "a.m.";
         if (nunbHour > 12) {
+            console.log('> 12');
             nunbHemi = "p.m.";
             nunbHour = nunbHour - 12;
-        }
+        } else if (nunbHour == 12) nunbHemi = "p.m.";
         console.log("..." + nunbHour + "...");
         let nunbMin = new Date().getMinutes();
         if (nunbMin < 10) nunbMin = `0${nunbMin}`;
