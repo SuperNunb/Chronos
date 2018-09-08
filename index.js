@@ -12,7 +12,7 @@ const getRandomInt = (min, max) => {
 
 bot.once('ready', () => {
     console.log("YOUR TIME..STARTS...NOW!");
-    bot.user.setActivity('your every step', { type: 'WATCHING' });
+    bot.user.setActivity('your every step | Say ch help', { type: 'WATCHING' });
 });
 
 bot.on("error", err => {
